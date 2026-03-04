@@ -1,8 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
 <head>
-<title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Bella Napoli | Pizza Napoletana</title>
+    <meta name="description" content="Pizzeria Bella Napoli - Tradizione, forno a legna e ingredienti freschi. Ordina online o prenota un tavolo.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pizzeria Bella Napoli">
+    <meta property="og:description" content="La vera pizza napoletana cotta nel forno a legna.">
+    <meta property="og:type" content="website">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#">Bella Napoli</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menù</a></li>
+                    <li><a href="#about">Chi siamo</a></li>
+                    <li><a href="#reviews">Recensioni</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__cta">
+                <a href="#order" class="btn btn--primary">Ordina Online</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container hero__content">
+            <h1>La vera pizza napoletana</h1>
+            <p>Forno a legna • Impasto 48h • Ingredienti DOP</p>
+            <div class="hero__actions">
+                <a href="#menu" class="btn btn--secondary">Scopri il menù</a>
+                <a href="#booking" class="btn btn--outline">Prenota un tavolo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURE SECTION -->
+    <section class="features">
+        <div class="container features__grid">
+            <div class="feature-card">
+                <h3>Forno a legna</h3>
+                <p>Cottura tradizionale a 450°C per una pizza perfetta.</p>
+            </div>
+            <div class="feature-card">
+                <h3> Ingredienti freschi</h3>
+                <p>Selezione giornaliera di prodotti locali e DOP.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Consegna veloce</h3>
+                <p>Ordina online e ricevi la pizza calda a casa tua.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <header class="section-header">
+                <h2>Il Nostro Menù</h2>
+                <p>Classiche, Speciali e Gourmet</p>
+            </header>
+
+            <div class="menu__grid">
+                <!-- CARD RIUTILIZZABILE -->
+                <article class="menu-card">
+                    <h3 class="menu-card__title">Margherita</h3>
+                    <p class="menu-card__description">
+                        Pomodoro San Marzano, mozzarella fiordilatte, basilico fresco.
+                    </p>
+                    <span class="menu-card__price">€6.50</span>
+                </article>
+
+                <article class="menu-card">
+                    <h3 class="menu-card__title">Diavola</h3>
+                    <p class="menu-card__description">
+                        Pomodoro, mozzarella, salame piccante.
+                    </p>
+                    <span class="menu-card__price">€8.00</span>
+                </article>
+
+                <article class="menu-card">
+                    <h3 class="menu-card__title">Quattro Stagioni</h3>
+                    <p class="menu-card__description">
+                        Pomodoro, mozzarella, funghi, carciofi, prosciutto, olive.
+                    </p>
+                    <span class="menu-card__price">€9.00</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="container about__content">
+            <div class="about__text">
+                <h2>Dal 1995 una storia di passione</h2>
+                <p>
+                    Da oltre 30 anni portiamo la tradizione napoletana nel cuore della città.
+                    Il nostro impasto matura 48 ore per garantire leggerezza e digeribilità.
+                </p>
+            </div>
+            <div class="about__image">
+                <img src="assets/images/forno.jpg" alt="Forno a legna">
+            </div>
+        </div>
+    </section>
+
+    <!-- RECENSIONI -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <header class="section-header">
+                <h2>Cosa dicono i nostri clienti</h2>
+            </header>
+
+            <div class="reviews__grid">
+                <blockquote class="review-card">
+                    <p>"La migliore pizza della città!"</p>
+                    <cite>- Marco R.</cite>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p>"Impasto leggerissimo e ingredienti top."</p>
+                    <cite>- Laura B.</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATTI -->
+    <section id="contact" class="contact">
+        <div class="container contact__grid">
+            <div class="contact__info">
+                <h2>Contattaci</h2>
+                <p><strong>Indirizzo:</strong> Via Roma 123, Napoli</p>
+                <p><strong>Telefono:</strong> +39 081 1234567</p>
+                <p><strong>Email:</strong> info@pizzeriabellanapoli.it</p>
+            </div>
+
+            <form class="contact__form">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Messaggio" required></textarea>
+                <button type="submit" class="btn btn--primary">Invia</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <p>&copy; 2026 Pizzeria Bella Napoli</p>
+            <div class="footer__links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Termini e Condizioni</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 </html>
